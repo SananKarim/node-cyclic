@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   return res.json("i am alive");
 });
 
+app.get("/health", (req, res) => {
+  return res.json("i am alive");
+});
+
 // Listen on port 80 for incoming HTTP requests
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
