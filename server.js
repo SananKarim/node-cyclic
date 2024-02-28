@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  return res.json("i am alive");
+  return res.json("i am alive testing second route");
 });
 
 // Listen on port 80 for incoming HTTP requests
