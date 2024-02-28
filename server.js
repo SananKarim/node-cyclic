@@ -14,14 +14,6 @@ const db = mysql.createConnection({
 });
 
 // Check if the database connection is successful
-db.connect((err) => {
-  if (err) {
-    console.error("Error connecting to database:", err);
-    return;
-  }
-  console.log("Connected to database");
-});
-
 app.get("/", (req, res) => {
   return res.json("testing");
 });
